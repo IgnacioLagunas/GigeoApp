@@ -1,0 +1,30 @@
+@media (max-width: $extra-extra-large){}
+@media (max-width: $extra-large){}
+@media (max-width: $large){}
+@media (max-width: $md){
+    .container{
+        width: 80%;
+    }
+    .hero__content{
+        .buttons{
+            display: none;
+        }
+    }
+    .main{
+        &__title{
+            text-align: center;
+        }
+        
+        &__content{
+            grid-template-columns: 1fr;
+        }
+        
+    }
+}
+@media (max-width: $sm){
+    .hero__content{
+        .profile{
+            font-size: 0.8rem;
+        }
+    }
+}

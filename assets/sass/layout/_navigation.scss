@@ -1,0 +1,95 @@
+.navbar{
+    background-color: white;
+    height: 90px;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        height: auto;
+        position: relative;
+        h1{
+            font-size: 2.5rem;
+            font-weight: 300;
+        }
+        span{
+            position: absolute;
+            top: -5px;
+            right: -20px;
+            font-weight: 300;
+            font-size: 0.7em ;
+        }
+    }
+    &__nav{
+        .navlist{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            &__item{
+                margin-left: 2em;
+                a i{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .hamburguesa, #menu{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    
+    .navbar{
+        &__nav{
+            
+            .navlist{
+                background-color: rgba(216, 205, 205, 0.931);
+                flex-direction: column;
+                justify-content: space-between;
+                text-align: center;
+                height: 320px;
+                width: 80px;
+                margin-right: 0;
+                position: absolute;
+                top: 90px;
+                right: -80px;
+                transition:  0.3s;
+                
+                &__item{
+                    margin: 0;
+                    width: 100%;
+                    height: 80px;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    i{
+                        font-size: 30px;
+                    }
+                    &:hover{
+                        background-color: #2c272786;
+                        transition: 0.3s;
+                        i{
+                            color: white;
+                        }
+                    }
+                    
+                }
+            }
+            
+            .hamburguesa{
+                display: block;
+                cursor: pointer;
+            }
+
+            input:checked ~ .navlist{
+            transform: translateX(-100%);
+            transition: 0.4s;
+            }
+        }
+    }
+    
+    
+        
+}
