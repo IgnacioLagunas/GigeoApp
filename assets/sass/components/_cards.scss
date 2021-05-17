@@ -3,19 +3,16 @@
     flex-direction: column;
     justify-content: space-around;
     cursor: pointer;
-    &__img{
-    }
+
     &__title{
         font-size: 1.3rem;
         margin: 0.5em 0;
         width: 90%;
     }
+    
     &__subtitle{
         font-size: 1.1rem;
         font-weight: 300;
         color: rgb(102, 98, 98);
-    }
-    &:hover{
-        
     }
 }
